@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+
+
+###
+GET http://localhost:5000/users/65475b2b422f5a17e858f8d5
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "Saif",
+    "email" : "muhsyaifudin51@gmail.com",
+    "gender" : "Male"
+}
+
+###
+PATCH http://localhost:5000/users/65475b2b422f5a17e858f8d5
+Content-Type: application/json
+
+{
+    "name" : "Jon taslim",
+    "email" : "joe@gmail.com",
+    "gender" : "Male"
+}
+
+###
+DELETE http://localhost:5000/users/65475b2b422f5a17e858f8d5
